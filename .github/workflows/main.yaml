@@ -39,7 +39,7 @@ jobs:
 
       - name: Pytest
         run: uv run pytest
-    publish:
+  publish:
     name: Publish image
     needs: [lint, test]
     runs-on: ubuntu-latest
